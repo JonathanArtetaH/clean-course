@@ -3,16 +3,16 @@
     // Ejemplo
     // Archivos a evaluar - files to evaluate
     const filesToEvaluate = [
-        { id: 1, state: false },
-        { id: 2, state: false },
-        { id: 3, state: true },
-        { id: 4, state: false },
-        { id: 5, state: false },
-        { id: 7, state: true },
+        { id: 1, statEval: false },
+        { id: 2, stateEval: false },
+        { id: 3, stateEval: true },
+        { id: 4, stateEval: false },
+        { id: 5, stateEval: false },
+        { id: 7, stateEval: true },
     ]; 
     
     // Archivos marcados para borrar - files to delete
-    const FilesToDelete = filesToEvaluate.map( f => f.state );
+    const FilesToDelete = filesToEvaluate.map( f => f.stateEval );
 
     
     class AbstractUser { };
