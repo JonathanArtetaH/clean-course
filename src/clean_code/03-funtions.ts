@@ -1,12 +1,6 @@
 (() => {
 
-    interface movie{
-        title: string,
-        description: string,
-        rating: number,
-        cast: string[]
-    }
- 
+    
     function getMovieId( movieId: string ) {
         console.log({ movieId });
     }
@@ -18,9 +12,16 @@
     function getActorId( ActorId: string ) {
         console.log({ ActorId });
     }
-     
+    
+    interface movie{
+        title: string,
+        description: string,
+        rating: number,
+        cast: string[]
+    }
     function newMovie({title,description,rating,cast}:movie) {
         console.log({ title, description, rating, cast });
+        // console.log( title, description, rating, cast );
     }
  
     function createNewActor( fullName: string, birthdate: Date ): boolean {
